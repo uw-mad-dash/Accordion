@@ -1,0 +1,362 @@
+INFO:root:Downloading file wikitext-2-v1.zip to ./train_network/lstm/data/wikitext-2/wikitext-2/wikitext-2-v1.zip.
+INFO:root:File ./train_network/lstm/data/wikitext-2/wikitext-2/wikitext-2-v1.zip downloaded.
+INFO:root:| epoch   0 | loss  0.05 | ppl     1.05
+INFO:root:
+Test set: Average loss: 6.8847, PPL: 978.6550
+
+INFO:root:| epoch   1 | loss  0.04 | ppl     1.04
+INFO:root:
+Test set: Average loss: 6.2781, PPL: 533.7067
+
+INFO:root:| epoch   2 | loss  0.03 | ppl     1.03
+INFO:root:
+Test set: Average loss: 6.0538, PPL: 426.4469
+
+INFO:root:| epoch   3 | loss  0.03 | ppl     1.03
+INFO:root:
+Test set: Average loss: 5.8392, PPL: 344.0127
+
+INFO:root:| epoch   4 | loss  0.03 | ppl     1.03
+INFO:root:
+Test set: Average loss: 5.6918, PPL: 296.9267
+
+INFO:root:| epoch   5 | loss  0.03 | ppl     1.03
+INFO:root:
+Test set: Average loss: 5.5019, PPL: 245.5685
+
+INFO:root:| epoch   6 | loss  0.03 | ppl     1.03
+INFO:root:
+Test set: Average loss: 5.4578, PPL: 234.9942
+
+INFO:root:| epoch   7 | loss  0.03 | ppl     1.03
+INFO:root:
+Test set: Average loss: 5.1890, PPL: 179.7788
+
+INFO:root:| epoch   8 | loss  0.03 | ppl     1.03
+INFO:root:
+Test set: Average loss: 5.1018, PPL: 164.8598
+
+INFO:root:| epoch   9 | loss  0.03 | ppl     1.03
+INFO:root:
+Test set: Average loss: 4.9651, PPL: 143.9521
+
+INFO:root:| epoch  10 | loss  0.03 | ppl     1.03
+INFO:root:
+Test set: Average loss: 4.8991, PPL: 134.8650
+
+INFO:root:| epoch  11 | loss  0.03 | ppl     1.03
+INFO:root:
+Test set: Average loss: 4.8290, PPL: 125.8536
+
+INFO:root:| epoch  12 | loss  0.03 | ppl     1.03
+INFO:root:
+Test set: Average loss: 4.7887, PPL: 120.9572
+
+INFO:root:| epoch  13 | loss  0.02 | ppl     1.03
+INFO:root:
+Test set: Average loss: 4.7393, PPL: 115.1404
+
+INFO:root:| epoch  14 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.7103, PPL: 111.9417
+
+INFO:root:| epoch  15 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6735, PPL: 107.9286
+
+INFO:root:| epoch  16 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6646, PPL: 106.9807
+
+INFO:root:| epoch  17 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6416, PPL: 104.5962
+
+INFO:root:| epoch  18 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6138, PPL: 101.7665
+
+INFO:root:| epoch  19 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6025, PPL: 100.6250
+
+INFO:root:| epoch  20 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5967, PPL: 100.0765
+
+INFO:root:| epoch  21 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5835, PPL: 98.8023
+
+INFO:root:| epoch  22 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5772, PPL: 98.2078
+
+INFO:root:| epoch  23 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5707, PPL: 97.5929
+
+INFO:root:| epoch  24 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5624, PPL: 96.7676
+
+INFO:root:| epoch  25 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5859, PPL: 99.0856
+
+INFO:root:| epoch  26 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5812, PPL: 98.6337
+
+INFO:root:| epoch  27 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5803, PPL: 98.5814
+
+INFO:root:| epoch  28 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5853, PPL: 99.0632
+
+INFO:root:| epoch  29 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5806, PPL: 98.5954
+
+INFO:root:| epoch  30 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5511, PPL: 95.6907
+
+INFO:root:| epoch  31 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5495, PPL: 95.5795
+
+INFO:root:| epoch  32 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5759, PPL: 98.1618
+
+INFO:root:| epoch  33 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5778, PPL: 98.3695
+
+INFO:root:| epoch  34 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5568, PPL: 96.2814
+
+INFO:root:| epoch  35 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5558, PPL: 96.2298
+
+INFO:root:| epoch  36 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5674, PPL: 97.3422
+
+INFO:root:| epoch  37 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5565, PPL: 96.2932
+
+INFO:root:| epoch  38 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5887, PPL: 99.4665
+
+INFO:root:| epoch  39 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5642, PPL: 97.0450
+
+INFO:root:| epoch  40 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5906, PPL: 99.6704
+
+INFO:root:| epoch  41 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5648, PPL: 97.1150
+
+INFO:root:| epoch  42 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5811, PPL: 98.6795
+
+INFO:root:| epoch  43 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5659, PPL: 97.2197
+
+INFO:root:| epoch  44 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6011, PPL: 100.7097
+
+INFO:root:| epoch  45 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5757, PPL: 98.1306
+
+INFO:root:| epoch  46 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5754, PPL: 98.1448
+
+INFO:root:| epoch  47 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6149, PPL: 102.1144
+
+INFO:root:| epoch  48 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6034, PPL: 100.9545
+
+INFO:root:| epoch  49 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6053, PPL: 101.1025
+
+INFO:root:| epoch  50 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6130, PPL: 101.8915
+
+INFO:root:| epoch  51 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6178, PPL: 102.3930
+
+INFO:root:| epoch  52 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5901, PPL: 99.6102
+
+INFO:root:| epoch  53 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5953, PPL: 100.1151
+
+INFO:root:| epoch  54 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6310, PPL: 103.7640
+
+INFO:root:| epoch  55 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6205, PPL: 102.6796
+
+INFO:root:| epoch  56 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6268, PPL: 103.3316
+
+INFO:root:| epoch  57 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6279, PPL: 103.4733
+
+INFO:root:| epoch  58 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6296, PPL: 103.6247
+
+INFO:root:| epoch  59 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6319, PPL: 103.8563
+
+INFO:root:| epoch  60 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6305, PPL: 103.7007
+
+INFO:root:| epoch  61 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.6377, PPL: 104.4748
+
+INFO:root:| epoch  62 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5663, PPL: 97.2867
+
+INFO:root:| epoch  63 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5654, PPL: 97.2136
+
+INFO:root:| epoch  64 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5664, PPL: 97.3167
+
+INFO:root:| epoch  65 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5652, PPL: 97.1982
+
+INFO:root:| epoch  66 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5664, PPL: 97.3276
+
+INFO:root:| epoch  67 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5656, PPL: 97.2415
+
+INFO:root:| epoch  68 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5677, PPL: 97.4573
+
+INFO:root:| epoch  69 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5669, PPL: 97.3750
+
+INFO:root:| epoch  70 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5665, PPL: 97.3416
+
+INFO:root:| epoch  71 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5677, PPL: 97.4708
+
+INFO:root:| epoch  72 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5674, PPL: 97.4392
+
+INFO:root:| epoch  73 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5682, PPL: 97.5053
+
+INFO:root:| epoch  74 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5681, PPL: 97.5033
+
+INFO:root:| epoch  75 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5674, PPL: 97.4339
+
+INFO:root:| epoch  76 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5697, PPL: 97.6617
+
+INFO:root:| epoch  77 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5698, PPL: 97.6671
+
+INFO:root:| epoch  78 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5705, PPL: 97.7378
+
+INFO:root:| epoch  79 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5707, PPL: 97.7626
+
+INFO:root:| epoch  80 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5708, PPL: 97.7812
+
+INFO:root:| epoch  81 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5682, PPL: 97.5293
+
+INFO:root:| epoch  82 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5684, PPL: 97.5450
+
+INFO:root:| epoch  83 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5684, PPL: 97.5486
+
+INFO:root:| epoch  84 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5681, PPL: 97.5205
+
+INFO:root:| epoch  85 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5687, PPL: 97.5775
+
+INFO:root:| epoch  86 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5687, PPL: 97.5777
+
+INFO:root:| epoch  87 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5688, PPL: 97.5799
+
+INFO:root:| epoch  88 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5688, PPL: 97.5851
+
+INFO:root:| epoch  89 | loss  0.02 | ppl     1.02
+INFO:root:
+Test set: Average loss: 4.5692, PPL: 97.6209
+
