@@ -80,9 +80,11 @@ The code borrows a lot of structure from code for
 of PowerSGD for providing the code.
 
 # Cite
+```
 @article{agarwal2020accordion,
   title={Accordion: Adaptive Gradient Communication via Critical Learning Regime Identification},
   author={Agarwal, Saurabh and Wang, Hongyi and Lee, Kangwook and Venkataraman, Shivaram and Papailiopoulos, Dimitris},
   journal={arXiv preprint arXiv:2010.16248},
   year={2020}
 }
+```
