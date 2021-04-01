@@ -32,14 +32,16 @@ critical regimes and high compression otherwise.
   master-IP
 
 * For ex- to run cifar10 training and simulate two nodes using powerSGD as a
-  reducer and AdaSparse use the following command -
+  reducer and Accordion use the following command -
+```
 * python main.py --model-type CNN --auto-switch --norm-file
   "cifar10_training.log" --start-k --k-start 2 --distributed --master-ip
 "tcp://127.0.0.1:9998" --num-nodes 2 --rank 0
+```
 * Run the same command again but replace --rank 0 with --rank 1 uptil 
 * To reproduce for example our Cifar10, ResNet-18 example run the code with 4
   nodes using the following command.
-* For getting result for powerSGD K=1 run-
+* For getting result for powerSGD Rank 1 run-
 ```python
 python main.py --model-type CNN --fixed-sched --norm-file "res18_psgd_k_1.log"
   --start-k --k-start 1 --distributed --master-ip "master_ip" 
@@ -47,7 +49,7 @@ python main.py --model-type CNN --fixed-sched --norm-file "res18_psgd_k_1.log"
 ```
 * Repeat the same command on 4 different nodes but replace ``` --rank 0 ``` with 1, 2
   and 3 on each node. 
-* Similarly to get result for PowerSGD K=2 run- 
+* Similarly to get result for PowerSGD Rank 2 run- 
 ```
 * python main.py --model-type CNN --fixed-sched --norm-file "res18_psgd_k_1.log"
   --start-k --k-start 2 --distributed --master-ip "master_ip"
@@ -56,7 +58,7 @@ python main.py --model-type CNN --fixed-sched --norm-file "res18_psgd_k_1.log"
 * To get the results for Accordion run the following command
 ```
 * python main.py --model-type CNN --auto-switch --norm-file
-  "res18_psgd_adsparse.log" --start-k --k-start 2 --distributed --master-ip "master_ip"
+  "res18_psgd_accordion.log" --start-k --k-start 2 --distributed --master-ip "master_ip"
 --num-nodes 4 --rank 0
 ```
 * Repeat the same command on 4 different nodes but replace --rank 0 with 1, 2
