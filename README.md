@@ -75,8 +75,9 @@ To run more experiments users can either add more configuration dictionaries as
 present at the top of the main.py or choose to modify existing ones.
 
 # Acknowledgement 
-The code borrows a lot of structure from Thijis Vogels code for
-[PowerSGD](https://github.com/epfml/powersgd). 
+The code borrows a lot of structure from code for 
+[PowerSGD](https://github.com/epfml/powersgd). We will like to thank the authors
+of PowerSGD for providing the code.
 
 # Cite
 @article{agarwal2020accordion,
