@@ -34,7 +34,7 @@ critical regimes and high compression otherwise.
 * For ex- to run cifar10 training and simulate two nodes using powerSGD as a
   reducer and Accordion use the following command -
 ```
-* python main.py --model-type CNN --auto-switch --norm-file
+python main.py --model-type CNN --auto-switch --norm-file
   "cifar10_training.log" --start-k --k-start 2 --distributed --master-ip
 "tcp://127.0.0.1:9998" --num-nodes 2 --rank 0
 ```
@@ -51,7 +51,7 @@ python main.py --model-type CNN --fixed-sched --norm-file "res18_psgd_k_1.log"
   and 3 on each node. 
 * Similarly to get result for PowerSGD Rank 2 run- 
 ```
-* python main.py --model-type CNN --fixed-sched --norm-file "res18_psgd_k_1.log"
+python main.py --model-type CNN --fixed-sched --norm-file "res18_psgd_k_1.log"
   --start-k --k-start 2 --distributed --master-ip "master_ip"
 --num-nodes 4 --rank 0
 ```
