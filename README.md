@@ -66,7 +66,7 @@ and 3 on each node.
 
 For easy reproducibility of the experiments in the paper we provide the
 following bash script.
-To reproduce Table 2 you can run *./get_table_2.sh master_ip rank* on four
+To reproduce Table 2 you can run ```./get_table_2.sh master_ip rank``` on four
 different nodes providing where master_ip is of the rank 0 node and ranks range
 from 0 to 3
 
