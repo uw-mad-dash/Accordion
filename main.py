@@ -222,21 +222,6 @@ def get_lr(config, epoch_num, current_lr, best_test_loss, current_test_loss):
     max_factor = torch.distributed.get_world_size()
     factor = 1.0 + (max_factor - 1.0) *min(epoch_num/config['warmup_epochs'], 1.0)
     if config['name'] == "CNN" or config['name'] == 'cifar100' or config['name'] == 'svhn':
-        # if epoch_num == 100:
-            # new_lr = config['init_lr']
-            # return new_lr
-        # if epoch_num == 101:
-            # new_lr = config['init_lr'] * 2.4
-            # return new_lr
-        # if epoch_num == 102:
-            # new_lr = config['init_lr'] * 3.8
-            # return new_lr
-        # if epoch_num == 103:
-            # new_lr = config['init_lr'] * 5.2
-            # return new_lr
-        # if epoch_num == 104:
-            # new_lr = config['init_lr'] * 6.6
-            # return new_lr
         if epoch_num <= 150:
             new_lr = config['init_lr'] *factor
             return new_lr
@@ -405,19 +390,6 @@ def main(args):
                         m.update_method(args.k_start, args.zero_memory)
                     else:
                         pass
-            # if epoch == 110:
-            #    for m in sparsify_method:
-            #        if m is not None:
-            #            m.update_method(4, args.zero_memory)
-            #        else:
-            #            pass
-
-            #if epoch == 130:
-            #    for m in sparsify_method:
-            #        if m is not None:
-            #            m.update_method(4, args.zero_memory)
-            #        else:
-            #            pass
             if epoch == 150:
                 for m in sparsify_method:
                     if m is not None:
@@ -558,10 +530,6 @@ def main(args):
                 auto_scale_tensor = torch.zeros(
                     len(sparsify_method), device="cuda:0", dtype=torch.int32)
                 if args.rank == 0:
-                    # only doing it for master
-                    #TODO: Make that 4 configurable
-                    # ratio_val, prev_norm, auto_scale_per_layer = auto_scale.run_auto_scale_gng(train_task,
-                                                                     # 4, args.norm_thresh, prev_norm)
                     
                     if epoch == 0:
                         old_grad_norms = None
