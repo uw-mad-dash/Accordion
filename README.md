@@ -12,7 +12,7 @@ critical regimes and high compression otherwise.
 * The entry point of the code is main.py
 
 * All the option for running code is set using either command line arguments or
-  using the config dictionaries in the beginning of the table.
+  using the config dictionaries in the beginning of the code.
 
 * All the details like data set loading, model configuration files are present
   in the **train_network** folder.
