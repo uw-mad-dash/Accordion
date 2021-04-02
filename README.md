@@ -9,10 +9,10 @@ norm to detect Accordion keeps low compression values in
 critical regimes and high compression otherwise. 
 
 # The basic of structure of code
-* The entry point of the code is main.py
+* The entry point of the code is *main.py*
 
 * All the option for running code is set using either command line arguments or
-  using the config dictionaries in the beginning of the code.
+  using the config dictionaries in the beginning of the *main.py*.
 
 * All the details like data set loading, model configuration files are present
   in the **train_network** folder.
