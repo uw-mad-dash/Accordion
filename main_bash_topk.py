@@ -574,7 +574,7 @@ def main(args):
                         old_grad_norms = grad_calc_dict[epoch-config['switch_freq']]
                         # will give the previous grads 
                     current_grad_norms = grad_calc_dict[epoch]
-                    auto_scale_per_layer, ratio_val = auto_scale.run_auto_scale_gng(
+                    auto_scale_per_layer, ratio_val = auto_scale_topk.run_auto_scale_gng(
                         current_grad_norms, old_grad_norms, epoch)
                     # auto_scale_divergence_list = auto_scale.run_auto_scale_divergence(
                         # grad_calc_dict, epoch, config['num_epochs'],
