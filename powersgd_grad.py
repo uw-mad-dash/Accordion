@@ -195,6 +195,44 @@ class RankKReducer(Reducer):
         return floats_communicated
 
 
+class TopKReducer(Reducer):
+    def __init__(self, random_seed, device,timer, rank=1):
+        super().__init__(random_seed, device, timer)
+        self.k = rank #Tells the percentage of k we want
+
+    def reduce(self, grad_in, grad_out, memory_out):
+        grad_single_tensor = list_to_tensor(grad_in)
+        num_sample = int(self.k * len(grad_single_tensor))
+        indexes = torch.argsort(torch.abs(grad_single_tensor),
+                                descending=True)[:num_sample]
+        values = grad_single_tensor[indexes]
+        index_list = [torch.empty_like(indexes) for k in range(self.n_workers)]
+        ind_wait = torch.distributed.all_gather(index_list, indexes, async_op=True)
+        value_list = [torch.empty_like(values) for k in range(self.n_workers)]
+        val_wait = torch.distributed.all_gather(value_list, values,
+                                                async_op=True)
+        ind_wait.wait()
+        val_wait.wait()
+        # grads synced
+        
+        grad_accum = torch.zeros_like(grad_single_tensor)
+        for idx, vals in zip(index_list, value_list):
+            grad_accum[idx] += vals
+        # got the sparsified gradient
+        start_index = 0
+        for idx, ts in enumerate(grad_out):
+            num_elements_ts = ts.numel()
+            ts = grad_accum[start_index:start_index+num_elements_ts].reshape(ts.shape)
+            grad_out[idx] = ts
+            start_index += num_elements_ts
+
+        # import ipdb; ipdb.set_trace()
+        return (2*indexes.numel()*self.n_workers)
+
+def list_to_tensor(input_list):
+    temp_list = [t.reshape(-1) for t in input_list]
+    return (torch.cat(temp_list))
+
 class TensorBuffer():
     """
     Packs multiple tensors into one flat buffer for efficient
@@ -249,6 +287,10 @@ class TensorBuffer():
             return buffers, handle
         else:
             return buffers
+
+
+
+
 
 def n_bits(tensor):
     return 8 * tensor.nelement() * tensor.element_size()
