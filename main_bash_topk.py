@@ -1,4 +1,4 @@
-# jacked up main.py to allow running directly from bash script for
+#floatjacked up main.py to allow running directly from bash script for
 # reproducibility
 import os
 import time
@@ -24,7 +24,7 @@ from torch.autograd import Variable
 import grad_utils
 import train_network
 import sparsify_gradient_topk
-import auto_scale
+import auto_scale_topk
 # commit to say powersgd wrap
 auto_scale_high = 0.99
 auto_scale_low = 0.1
@@ -184,7 +184,7 @@ def add_fit_args(parser):
                         default="wikitext_lstm_full_rank.json")
     parser.add_argument("--start-k", default=False, action="store_true",
                         help="starts with a k")
-    parser.add_argument("--k-start", default=None, type= int,
+    parser.add_argument("--k-start", default=None, type= float,
                         help = "Fix the start k")
     parser.add_argument("--fixed-sched", default=False, action="store_true",
                         help="follow a fixed schedule")
