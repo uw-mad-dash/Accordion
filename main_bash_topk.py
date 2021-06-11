@@ -561,7 +561,7 @@ def main(args):
             if epoch % config['switch_freq'] == 0: 
                 #TOD$O: Make acceptable k from args of config dict
                 auto_scale_tensor = torch.zeros(
-                    len(sparsify_method), device="cuda:0", dtype=torch.int32)
+                    len(sparsify_method), device="cuda:0", dtype=torch.float32)
                 if args.rank == 0:
                     # only doing it for master
                     #TODO: Make that 4 configurable
@@ -596,7 +596,7 @@ def main(args):
                                            auto_scale_per_layer))
                     
                     auto_scale_tensor = torch.tensor(auto_scale_per_layer,
-                                                     dtype=torch.int32).to(
+                                                     dtype=torch.float32).to(
                         'cuda:0')
                 # broadcast autoscale values
                 print ("Auto scale tensor before = {} for rank {}".format(
